@@ -37,7 +37,7 @@
     content: "";
 }
 
-.link:hover, .item:hover .link, .item-drop:hover .link-drop, .item-sec-drop .link-sec:hover {
+.link:hover, .item:hover .link, .item-drop:hover .link-drop, .item-sec-drop:hover  .link-sec{
     background-color:cadetblue;
     color: #000000;
 }
@@ -49,12 +49,13 @@
 }
 
 .list-sec-drop {
+    display: none;
     position: absolute;
     left: 300px;
     top: 0;
 }
 
-.item:hover .list-drop, .link-drop:hover .list-sec-drop {
+.item:hover .list-drop, .item-drop:hover .list-sec-drop {
     display: block;
 }
 
